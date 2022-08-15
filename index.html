@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/styles.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>SongWaveJS</title>
+</head>
+<body>
+    <div class="container">
+        <!--begin Navbar -->
+        <nav class="navbar navbar-expand-sm py-5" aria-current="home">
+            <div class="container-fluid">
+                <img src="resources/logo.png"  style="width:45px">
+                <!--Visible on small devices-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Begin Navbar options -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/SongWaveJS/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Privacy Policy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End Navbar options -->
+            </div>
+        </nav>
+        <!--End Navbar -->
+
+        <!--Begin Main -->
+        <div class="row mt-md-5">
+            <div class="col-lg-7 col-md-12 mb-3">
+                <div class="container">
+                    <h1>Welcome to SongWaveJS</h1>
+                    <p>Log into your Spotify account to see your unique song waves poster.</p>
+                    <input class="btn btn-dark mt-4 mb-4" type="button" value="Log in" onsubmit="initiateLogin()">
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-12">
+                <div class="container">
+                    <img src="resources/frontpage_image.svg" style="width:20rem">
+                </div>
+            </div>
+        </div>
+        <!--End Main -->
+
+    </div>
+    <!--Scripts-->
+    <script src="./js/bootstrap.js"></script>
+</body>
+</html>
