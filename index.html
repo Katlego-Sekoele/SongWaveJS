@@ -38,12 +38,12 @@
         <!--End Navbar -->
 
         <!--Begin Main -->
-        <div class="row mt-md-5">
+        <div class="row mt-md-5" id="login">
             <div class="col-lg-7 col-md-12 mb-3">
                 <div class="container">
                     <h1>Welcome to SongWaveJS</h1>
                     <p>Log into your Spotify account to see your unique song waves poster.</p>
-                    <input class="btn btn-dark mt-4 mb-4" type="button" value="Log in" onsubmit="initiateLogin()">
+                    <a href="/login" class="btn btn-dark mt-4 mb-4">Log in with Spotify</a>
                 </div>
             </div>
             <div class="col-lg-5 col-md-12">
@@ -54,8 +54,13 @@
         </div>
         <!--End Main -->
 
+        <div class="container" id="loggedin" style="display: none">
+            <h1>Logged in</h1>
+        </div>
+
     </div>
     <!--Scripts-->
     <script src="./js/bootstrap.js"></script>
+
 </body>
 </html>

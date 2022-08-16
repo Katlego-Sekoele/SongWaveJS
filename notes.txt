@@ -1,0 +1,9 @@
+Things to install:
+    npm (using sudo apt install npm)
+    nodejs (using sudo apt install nodejs)
+    express (using npm install express)
+    request (npm install request)
+    cors (npm install cors)
+    querystring (npm install querystring)
+    cookie-parser (npm install cookie-parser)
+

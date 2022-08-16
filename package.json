@@ -1,0 +1,19 @@
+{
+  "name": "songwavejs",
+  "version": "1.0.0",
+  "description": "A web application that makes use of the Spotify API to generate unique songwave posters for users.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Katlego-Sekoele/SongWaveJS.git"
+  },
+  "author": "katlego-sekoele",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Katlego-Sekoele/SongWaveJS/issues"
+  },
+  "homepage": "https://github.com/Katlego-Sekoele/SongWaveJS#readme"
+}
