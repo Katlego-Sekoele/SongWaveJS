@@ -1,8 +1,8 @@
 {
   "name": "songwavejs",
   "version": "1.0.0",
-  "description": "A web application that makes use of the Spotify API to generate unique songwave posters for users.",
-  "main": "app.js",
+  "description": "A web app that will make use of the Spotify API and webAudio to generate waveform posters",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,10 +10,13 @@
     "type": "git",
     "url": "git+https://github.com/Katlego-Sekoele/SongWaveJS.git"
   },
-  "author": "katlego-sekoele",
+  "author": "Maesela Katlego Sekoele",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Katlego-Sekoele/SongWaveJS/issues"
   },
-  "homepage": "https://github.com/Katlego-Sekoele/SongWaveJS#readme"
+  "homepage": "https://github.com/Katlego-Sekoele/SongWaveJS#readme",
+  "devDependencies": {
+    "express": "^4.18.1"
+  }
 }
