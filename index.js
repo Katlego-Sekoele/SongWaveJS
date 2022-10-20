@@ -1,10 +1,22 @@
 //https://levelup.gitconnected.com/set-up-and-run-a-simple-node-app-project-38b403a3dc09
 
-const express = require("express")
+var querystring = require('querystring');
+const express = require("express");
 const app = express();
-const port = "3000"
+const port = "3000";
 
-app.use(express.static(__dirname + "/public"));
+app.use(express.static(__dirname + "/Public"));
+
+//api keys and variables
+require('dotenv').config();
+
+const client_id = process.env.CLIENT_ID;
+const client_secret = process.env.CLIENT_SECRET;
+const redirect_uri = process.env.REDIRECT_URI;
+
+const scope = 'user-read-private user-read-email';
+
+//end api keys
 
 
 /*
@@ -22,8 +34,21 @@ app.get("/", function (req, res){
    res.sendFile("./index.html", {root: __dirname})
 });
 
-app.get("/login", function (req, res) {
-    res.send("login request sent");
+app.get('/login', function(req, res) {
+
+    res.redirect('https://accounts.spotify.com/authorize?' +
+        querystring.stringify({
+            response_type: 'code',
+            client_id: client_id,
+            scope: scope,
+            redirect_uri: redirect_uri
+        }));
+});
+
+app.get('/logged', function (req, res){
+    let code = req.query.code || null;
+    res.sendFile("./Public/html/logged.html", {root: __dirname})
+    console.log(code);
 });
 
 app.listen(port, function ()  {
